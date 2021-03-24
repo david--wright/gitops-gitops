@@ -5,9 +5,10 @@ pipeline {
   options {
     disableConcurrentBuilds()
   }
-  agent {
+  agent { 
     node{
       label 'nodejs'
+    }
   }
   stages {
     stage ('Validate configuration resources') {
@@ -37,4 +38,4 @@ pipeline {
 
     }
   }
-}
+
